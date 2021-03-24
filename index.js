@@ -10,7 +10,7 @@ module.exports = class Mystbin extends Plugin {
    			command: "mystbin",
    			description: "mystbin",
    			usage: "{c} [--send] [TEXT | --clipboard]",
-   			executor: this.mystbin.bind(this)
+   			executor: (...args) => this.mystbin(...args)
    		});
    	}
 
